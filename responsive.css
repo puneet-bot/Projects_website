@@ -1,0 +1,20 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .jumbotron{
+        padding: 100px;
+    }
+  }
+  
+
+  @media (min-width: 500px) and (max-width: 767px) {
+    .jumbotron{
+        padding: 50px;
+    }
+  }
+  
+
+  @media (min-width: 0px) and (max-width: 499px) {
+    .jumbotron{
+        padding: 25px;
+    }
+  }
+  

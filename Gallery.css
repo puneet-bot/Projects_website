@@ -1,5 +1,10 @@
-nav,.jumbotron,.col{
+nav,.jumbotron{
 	margin-bottom: 20px;
+}
+
+.card{
+    width: 95%;
+    margin:5px;
 }
 
 .nav-link, .nav-brand{

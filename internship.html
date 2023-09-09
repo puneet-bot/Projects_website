@@ -2,39 +2,50 @@
 <html>
 
 <head>
-  <title>Image Gallery</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <script src="https://use.fontawesome.com/59a8337077.js"></script>
-  <link rel="stylesheet" type="text/css" href="Gallery.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>La vie| Internship Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="Gallery.css" />
+  <link rel="stylesheet" href="responsive.css" />
 </head>
 
 <body>
-
   <nav class="navbar navbar-expand-lg bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Puneet Arora</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">La vie</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            
-            <a class="nav-link" aria-current="page" href="/index.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-braces" viewBox="0 0 16 16">
-              <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/>
-            </svg> FrontEnd</a>
+            <a class="nav-link" aria-current="page" href="/index.html"><svg xmlns="http://www.w3.org/2000/svg"
+                width="32" height="32" fill="currentColor" class="bi bi-braces" viewBox="0 0 16 16">
+                <path
+                  d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z" />
+              </svg>
+              FrontEnd</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/backend.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bezier" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
-              <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"/>
-            </svg> Backend</a>
+            <a class="nav-link" href="/backend.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                fill="currentColor" class="bi bi-bezier" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z" />
+                <path
+                  d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z" />
+              </svg>
+              Backend</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/internship.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
-              <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
-            </svg> Internship</a>
+            <a class="nav-link" href="/internship.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                <path
+                  d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+              </svg>
+              Internship</a>
           </li>
         </ul>
       </div>
@@ -43,91 +54,130 @@
 
   <div class="container jumbotron">
     <h1>Internship Journey at Next Lay Solutions Pvt. Ltd</h1>
-    <p>Welcome to this page, where you can explore my internship project. I've poured my time and effort into this endeavor, and I'm excited to share the insights and outcomes with you. Dive in to discover the results of my hard work!</p>
-    <a href="#" class="btn">Certificate</a>
-</div>
+    <p>
+      Welcome to this page, where you can explore my internship project. I've
+      poured my time and effort into this endeavor, and I'm excited to share
+      the insights and outcomes with you. Dive in to discover the results of
+      my hard work!
+    </p>
+    <a href="https://drive.google.com/drive/u/0/folders/1RVbkvDdY41MuXY-vY7ZjU0w_DYWdvNmB" class="btn" target="_blank">Certificate</a>
+  </div>
 
-    <div class="container text-center">
-      <div class="row">
-        <div class="col col-xs-12 col-sm-6 col-md-4">
-          <div class="card" style="width: 25rem;">
-            <img src="/static/Report Page.png" class="card-img-top" alt="Report Page">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-lg-4 col-margin">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="card">
+            <img src="/static/Report Page.png" class="card-img-top" alt="Report Page" />
             <div class="card-body">
               <h5 class="card-title">Report Page</h5>
               <p class="card-text">
-                The objective was to showcase diverse visual representations through graphs, presented in an aesthetically pleasing manner, and enable users to download the report in PDF format.
-                <br><hr>Technology Stack: HTML, CSS, JavaScript, jQuery, Bootstrap, Chart.js</p>
-              <a href="#" class="btn btn-primary">Website</a>
-              <a href="#" class="btn btn-success">Github</a>  
+                The objective was to showcase diverse visual representations
+                through graphs, presented in an aesthetically pleasing manner,
+                and enable users to download the report in PDF format.
+                <br />
+                <hr />
+                Technology Stack: HTML, CSS, JavaScript, jQuery, Bootstrap,
+                Chart.js
+              </p>
+              <a href="https://goofy-bohr-b7f18a.netlify.app/" target="_blank" class="btn btn-primary">Website</a>
+              <a href="https://github.com/puneet-bot/Report_page" target="_blank" class="btn btn-success">Github</a>
             </div>
           </div>
         </div>
-        <div class="col col-xs-12 col-sm-6 col-md-4">
-          <div class="card" style="width: 25rem;">
-            <img src="/static/Hidden Table.png" class="card-img-top" alt="Report Page">
+      </div>
+
+      <div class="col-md-6 col-sm-12 col-lg-4 col-margin">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="card">
+            <img src="/static/Hidden Table.png" class="card-img-top" alt="Questuion Table" />
             <div class="card-body">
               <h5 class="card-title">Question Table</h5>
               <p class="card-text">
-                The goal was to develop two tables, one where users can click "add" to include items into a hidden table, akin to the cart functionality on shopping websites. Upon adding items, the previously hidden table becomes visible, and a removal button is provided for each item.
-                <br><hr>Technology Stack: HTML, CSS, JavaScript, jQuery, Bootstrap
+                The goal was to develop two tables, one where users can click
+                "add" to include items into a hidden table, akin to the cart
+                functionality on shopping websites. Upon adding items, the
+                previously hidden table becomes visible, and a removal button
+                is provided for each item.
+                <br />
+                <hr />
+                Technology Stack: HTML, CSS, JavaScript, jQuery, Bootstrap
               </p>
-              <a href="#" class="btn btn-primary">Website</a>
-              <a href="#" class="btn btn-success">Github</a>  
+              <a href="https://romantic-blackwell-d82cb1.netlify.app/" target="_blank" class="btn btn-primary">Website</a>
+              <a href="https://github.com/puneet-bot/Question_Tables" target="_blank" class="btn btn-success">Github</a>
             </div>
           </div>
         </div>
-        <div class="col col-xs-12 col-sm-6 col-md-4">
-          <div class="card" style="width: 25rem;">
-            <img src="/static/SubjectWise Report Page.png" class="card-img-top" alt="Report Page">
+      </div>
+
+      <div class="col-md-6 col-sm-12 col-lg-4 col-margin">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="card">
+            <img src="/static/SubjectWise Report Page.png" class="card-img-top" alt="Subject Wise Report Page" />
             <div class="card-body">
               <h5 class="card-title">Subject Wise Report Page</h5>
               <p class="card-text">
-                The aim was to create a web application that displays a student's subject-wise report using graphical representations.
-                <br><hr>Technology Stack: HTML, CSS, JavaScript, jQuery, Bootstrap
+                The aim was to create a web application that displays a
+                student's subject-wise report using graphical representations.
+                <br />
+                <hr />
+                Technology Stack: HTML, CSS, JavaScript, jQuery, Bootstrap
               </p>
-              <a href="#" class="btn btn-primary">Website</a>
-              <a href="#" class="btn btn-success">Github</a>  
+              <a href="https://reverent-kilby-a9b328.netlify.app/" target="_blank" class="btn btn-primary">Website</a>
+              <a href="https://github.com/puneet-bot/Report_page" target="_blank" class="btn btn-success">Github</a>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col col-xs-12 col-sm-6 col-md-4">
-          <div class="card" style="width: 25rem;">
-            <img src="/static/TopicPage.png" class="card-img-top" alt="Report Page">
+      <div class="col-md-6 col-sm-12 col-lg-4 col-margin">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="card">
+            <img src="/static/TopicPage.png" class="card-img-top" alt="Topic Page" />
             <div class="card-body">
-              <h5 class="card-title">Topic-Report Page</h5>
+              <h5 class="card-title">Topic Page</h5>
               <p class="card-text">
-                The objective was to develop a web application that presents a student's allocated topics along with their progress or rating in each.
-                <br><hr>Technology Stack: HTML, CSS, JavaScript, jQuery, Bootstrap, Node.js, Express.js, MongoDB
+                The objective was to develop a web application that presents a
+                student's allocated topics along with their progress or rating
+                in each.
+                <br />
+                <hr />
+                Technology Stack: HTML, CSS, JavaScript, jQuery, Bootstrap,
+                Node.js, Express.js, MongoDB
               </p>
-              <a href="#" class="btn btn-primary">Website</a>
-              <a href="#" class="btn btn-success">Github</a>  
+              <a href="https://nostalgic-kirch-787141.netlify.app/" target="_blank" class="btn btn-primary">Website</a>
+              <a href="https://github.com/puneet-bot/Topic_Page" target="_blank" class="btn btn-success">Github</a>
             </div>
           </div>
         </div>
+      </div>
 
-
-        <div class="col col-xs-12 col-sm-6 col-md-4">
-          <div class="card" style="width: 25rem;">
-            <img src="/static/HomePage.png" class="card-img-top" alt="Report Page">
+      <div class="col-md-6 col-sm-12 col-lg-4 col-margin">
+        <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="card">
+            <img src="/static/HomePage.png" class="card-img-top" alt="Home Page" />
             <div class="card-body">
               <h5 class="card-title">Home Page</h5>
               <p class="card-text">
-                A responsive static landing web application for EasyGaps firm was designed to portray product-specific information in a user-oriented manner. 
-                <br><hr>Technology Stack: HTML, CSS, Bootstrap, JavaScript
+                A responsive static landing web application for EasyGaps firm
+                was designed to portray product-specific information in a
+                user-oriented manner.
+                <br />
+                <hr />
+                Technology Stack: HTML, CSS, Bootstrap, JavaScript
               </p>
-              <a href="#" class="btn btn-primary">Website</a>
-              <a href="#" class="btn btn-success">Github</a>  
+              <a href="https://gracious-kowalevski-713afd.netlify.app/" target="_blank" class="btn btn-primary">Website</a>
+              <a href="https://github.com/puneet-bot/Homepage" target="_blank" class="btn btn-success">Github</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
+  </div>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -2,66 +2,123 @@
 <html>
 
 <head>
-  <title>Image Gallery</title>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-  <script src="https://use.fontawesome.com/59a8337077.js"></script>
-  <link rel="stylesheet" type="text/css" href="Gallery.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La vie| Frontend Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="Gallery.css">
+  <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"
-          aria-expanded="false">
-          <span class="sr-only">Toggle Navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="index.html" class="navbar-brand"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
-          Frontend</a>
-        <a href="backend.html" class="navbar-brand"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
-          Backend</a>
-        <a href="/internship.html" class="navbar-brand"><span class="glyphicon glyphicon-picture"
-            aria-hidden="true"></span>
-          Internship</a>
+
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">La vie</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            
+            <a class="nav-link" aria-current="page" href="/index.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-braces" viewBox="0 0 16 16">
+              <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/>
+            </svg> FrontEnd</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/backend.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bezier" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"/>
+              <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"/>
+            </svg> Backend</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/internship.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+              <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+            </svg> Internship</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
-  <div class="container">
-    <div class="jumbotron">
-      <h1>
-        <i class="fa fa-camera-retro" aria-hidden="true"></i> Frontend
-        Projects
-      </h1>
-      <p>
-        I have crafted a diverse portfolio of dynamic and visually captivating
-        website projects, showcasing my ability to blend creativity with
-        cutting-edge technology.
-      </p>
-    </div>
 
-    <div class="row">
-      <!-- GURUJI ASTRO ASSIGNMENT -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="mycontainer">
-          <div class="thumbnail">
-            <img class="image" src="./static/guruji astro.png" />
-            <div class="middle">
-              <a class="text" href="https://github.com/puneet-bot/Todo-List" target="_blank">TODO List</a>
+  <div class="container jumbotron">
+    <h1>Backend Projects</h1>
+    <p>Welcome to this webpage! This web application serves as a showcase for a variety of backend projects, providing a platform for me to present my portfolio in the realm of frontend development.</p>
+    <a href="https://drive.google.com/drive/u/0/folders/1h442NU5YFBZd4R0b_7eJPoT9fSCXKQfX" target="_blank" class="btn">Frontend Certificate</a>
+</div>
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-lg-4 col-margin text-center">
+          <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="card">
+            <img src="./static/TODO.png" class="card-img-top" alt="TODO List">
+            <div class="card-body">
+              <h5 class="card-title">TODO List</h5>
+              <p class="card-text">
+                A todo list web application is a digital tool designed to help users organize tasks and manage their daily responsibilities efficiently. Users can create, edit, and prioritize tasks, set deadlines, and mark items as completed, providing a convenient way to stay on top of their commitments and improve productivity.
+                <br><hr>Technology Stack:Node.js, Express.js, mongodb</p>
+              <a href="https://github.com/puneet-bot/Todo-List" target="_blank" class="btn btn-success">Github</a>  
             </div>
           </div>
+          </div>
         </div>
-      </div>
-     
-    </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <div class="col-md-6 col-sm-12 col-lg-4 col-margin text-center">
+          <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="card">
+            <img src="./static/codeial.png" class="card-img-top" alt="Codeial">
+            <div class="card-body">
+              <h5 class="card-title">Codeial</h5>
+              <p class="card-text">
+                A social media web application is an online platform that enables users to connect and interact with others, sharing text, images, videos, and other content.
+                <br><hr>Technology Stack:Node.js, Express.js, mongodb, redis, AJAX etc</p>
+              <a href="https://sunny-marzipan-a0f02e.netlify.app/" target="_blank" class="btn btn-primary">Website</a>
+              <a href="https://github.com/puneet-bot/Calculator" target="_blank" class="btn btn-success">Github</a>  
+            </div>
+          </div>
+          </div>
+        </div>
+
+        
+        <div class="col-md-6 col-sm-12 col-lg-4 col-margin text-center">
+          <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="card">
+            <img src="./static/Project_Creator.png" class="card-img-top" alt="Codeial">
+            <div class="card-body">
+              <h5 class="card-title">Project Creator</h5>
+              <p class="card-text">       
+                Imagine a web application that functions like a GitHub clone but offers innovative features. This platform allows users to create and manage posts for their project lists, facilitating efficient project organization and collaboration within their teams or communities.
+                <br><hr>Technology Stack:Node.js, Express.js, mongodb, redis, AJAX etc</p>
+              <a href="https://github.com/puneet-bot/Backend_AUG22B-2G3" target="_blank" class="btn btn-success">Github</a>  
+            </div>
+          </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-sm-12 col-lg-4 col-margin text-center">
+          <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="card">
+            <img src="./static/google_contacts.png" class="card-img-top" alt="Codeial">
+            <div class="card-body">
+              <h5 class="card-title">Google Contacts</h5>
+              <p class="card-text">       
+                Google Contacts is a web-based application that enables users to manage their contacts by adding, editing, deleting, and searching for saved contact details. The application incorporates authentication through Passport.js and includes a "forgot password" feature. Additionally, it utilizes Redis for certain functionalities.
+                <br><hr>Technology Stack:Node.js, Express.js, mongodb, redis, AJAX etc</p>
+              <a href="https://github.com/puneet-bot/Bakend_Python_July_Batch_A" target="_blank" class="btn btn-success">Github</a>  
+            </div>
+          </div>
+          </div>
+        </div>
+
+          </div>
+        </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>
